@@ -1268,6 +1268,7 @@ GameObject:
   - component: {fileID: 369106906}
   - component: {fileID: 369106905}
   - component: {fileID: 369106909}
+  - component: {fileID: 369106910}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1384,6 +1385,18 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &369106910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 369106904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa403aa5d22d6c1469b6e6c340f98c6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 661872242}
 --- !u!1 &372375511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2091,7 +2104,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -20.752747}
+  m_AnchoredPosition: {x: 0, y: -20.752808}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &456578982
@@ -2981,6 +2994,7 @@ GameObject:
   - component: {fileID: 661872244}
   - component: {fileID: 661872243}
   - component: {fileID: 661872242}
+  - component: {fileID: 661872245}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -3045,7 +3059,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 661872243}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 369106910}
+        m_MethodName: OnButtonClicked
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: ooo
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &661872243
@@ -3081,6 +3106,36 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661872240}
+--- !u!114 &661872245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 661872240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 369106910}
+          m_MethodName: OnButtonClicked
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 2
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!1 &695523661
 GameObject:
   m_ObjectHideFlags: 0
@@ -6714,8 +6769,9 @@ GameObject:
   - component: {fileID: 1520540380}
   - component: {fileID: 1520540379}
   - component: {fileID: 1520540378}
+  - component: {fileID: 1520540381}
   m_Layer: 5
-  m_Name: Cube
+  m_Name: "Cube - 3D Event \u6D4B\u8BD5"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6788,6 +6844,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1520540376}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1520540381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1520540376}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88dbc6ffc9f69584daf7c0bfd9948ce7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HighlightedColor: {r: 1, g: 0, b: 0, a: 1}
+  NormalColor: {r: 1, g: 1, b: 1, a: 1}
+  PressedColor: {r: 0, g: 1, b: 0, a: 1}
 --- !u!1 &1545808773
 GameObject:
   m_ObjectHideFlags: 0
@@ -6894,7 +6964,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 360.189}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 17.399658, y: -0.3998413}
+  m_AnchoredPosition: {x: 17.399658, y: -0.39978027}
   m_SizeDelta: {x: -811.6, y: -250.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1602228213
@@ -7489,6 +7559,7 @@ GameObject:
   - component: {fileID: 1726316991}
   - component: {fileID: 1726316988}
   - component: {fileID: 1726316990}
+  - component: {fileID: 1726316989}
   m_Layer: 5
   m_Name: UI Camera
   m_TagString: Untagged
@@ -7532,6 +7603,21 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
+--- !u!114 &1726316989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1726316987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -768656878, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EventMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_MaxRayIntersections: 0
 --- !u!124 &1726316990
 Behaviour:
   m_ObjectHideFlags: 0
@@ -7653,7 +7739,7 @@ MonoBehaviour:
   m_CancelButton: Cancel
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
+  m_ForceModuleActive: 1
 --- !u!114 &1814444700
 MonoBehaviour:
   m_ObjectHideFlags: 0
