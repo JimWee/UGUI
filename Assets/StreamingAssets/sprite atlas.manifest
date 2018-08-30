@@ -1,0 +1,23 @@
+ManifestFileVersion: 0
+CRC: 903065240
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 559b211cc5ca4f9e66261703fa2a9d40
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 8f81471f4cfc7bf93c7fa752ebb4eb40
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 687078895
+  Script: {instanceID: 0}
+Assets:
+- Assets/UI/Atals/UGUI/UGUI Sprite Atlas.spriteatlas
+- Assets/UI/Atals/UGUI/GM.png
+- Assets/UI/Atals/UGUI/Qw_bn.png
+- Assets/UI/Atals/UGUI/Lq_bn.png
+Dependencies: []

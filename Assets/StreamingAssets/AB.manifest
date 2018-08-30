@@ -1,15 +1,11 @@
 ManifestFileVersion: 0
-CRC: 1738181741
+CRC: 3660643189
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: ui
-      Dependencies:
-        Dependency_0: at
-    Info_1:
-      Name: at
+      Name: sprite atlas
       Dependencies: {}
-    Info_2:
-      Name: res
+    Info_1:
+      Name: prefabs
       Dependencies:
-        Dependency_0: at
+        Dependency_0: sprite atlas

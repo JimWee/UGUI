@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PostProcessing
+  - DynamicObjects
+  - scene
+  - char
+  - NGUI
   - 
   - 
   - 
