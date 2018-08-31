@@ -1,11 +1,10 @@
 ManifestFileVersion: 0
-CRC: 3660643189
+CRC: 2873585344
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: sprite atlas
       Dependencies: {}
     Info_1:
-      Name: prefabs
-      Dependencies:
-        Dependency_0: sprite atlas
+      Name: ngui sprite atlas
+      Dependencies: {}
